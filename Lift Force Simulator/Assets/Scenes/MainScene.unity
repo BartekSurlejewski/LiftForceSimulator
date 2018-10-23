@@ -212,7 +212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1339328589577258, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
       propertyPath: m_Name
-      value: LabeledSlider (4)
+      value: AirfoilCoefficientSlider
       objectReference: {fileID: 0}
     - target: {fileID: 224236925165774416, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -304,6 +304,12 @@ Prefab:
       propertyPath: m_MaxValue
       value: 3.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: SliderValue
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e0fe28784681e144ba4675c49eb6867,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -705,7 +711,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1339328589577258, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
       propertyPath: m_Name
-      value: LabeledSlider (1)
+      value: WingSurfaceSlider
       objectReference: {fileID: 0}
     - target: {fileID: 224236925165774416, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -735,22 +741,22 @@ Prefab:
     - target: {fileID: 114872318172863164, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114872318172863164, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -797,6 +803,12 @@ Prefab:
       propertyPath: m_MaxValue
       value: 422.5
       objectReference: {fileID: 0}
+    - target: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: SliderValue
+      value: 
+      objectReference: {fileID: 11400000, guid: 114b51663b93a3e45826d70aa6521ec0,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -899,7 +911,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1339328589577258, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
       propertyPath: m_Name
-      value: LabeledSlider (3)
+      value: AttackAngleSlider
       objectReference: {fileID: 0}
     - target: {fileID: 224236925165774416, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -995,6 +1007,11 @@ Prefab:
         type: 2}
       propertyPath: m_WholeNumbers
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_Navigation.m_Mode
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
@@ -1098,7 +1115,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1339328589577258, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
       propertyPath: m_Name
-      value: LabeledSlider (2)
+      value: VelocitySlider
       objectReference: {fileID: 0}
     - target: {fileID: 224236925165774416, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -1128,22 +1145,22 @@ Prefab:
     - target: {fileID: 114872318172863164, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114872318172863164, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_havePropertiesChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
       propertyPath: m_isInputParsingRequired
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114640943912711840, guid: 0846e77e2af63994b92a8dc0ecf668fd,
         type: 2}
@@ -1175,6 +1192,12 @@ Prefab:
       propertyPath: m_Value
       value: 255
       objectReference: {fileID: 0}
+    - target: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: SliderValue
+      value: 
+      objectReference: {fileID: 11400000, guid: e3801cd91b3dbcd4b9879b55e7c734c5,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -1350,6 +1373,16 @@ Prefab:
       propertyPath: decimalPlaces
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 1339328589577258, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
+      propertyPath: m_Name
+      value: AirDensitySlider
+      objectReference: {fileID: 0}
+    - target: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: SliderValue
+      value: 
+      objectReference: {fileID: 11400000, guid: 6006623f527d8dd499a639c8fa3a726c,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -1412,7 +1445,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 784}
+  m_SizeDelta: {x: 349, y: 784}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &2037552847
 MonoBehaviour:
