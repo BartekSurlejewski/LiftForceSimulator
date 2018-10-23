@@ -310,9 +310,36 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 2e0fe28784681e144ba4675c49eb6867,
         type: 2}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 296133164}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &292443403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1142663818}
+  m_Script: {fileID: 11500000, guid: 8d08b04b6b6e71d4787f4d8f5410db52, type: 3}
+--- !u!114 &296133164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 75287859}
+  m_Script: {fileID: 11500000, guid: 8d08b04b6b6e71d4787f4d8f5410db52, type: 3}
 --- !u!1 &383320471
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,9 +836,30 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 114b51663b93a3e45826d70aa6521ec0,
         type: 2}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 993596100}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &993596100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 912672599}
+  m_Script: {fileID: 11500000, guid: 8d08b04b6b6e71d4787f4d8f5410db52, type: 3}
 --- !u!1001 &1036133034
 Prefab:
   m_ObjectHideFlags: 0
@@ -1198,6 +1246,21 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: e3801cd91b3dbcd4b9879b55e7c734c5,
         type: 2}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 292443403}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -1383,6 +1446,26 @@ Prefab:
       value: 
       objectReference: {fileID: 11400000, guid: 6006623f527d8dd499a639c8fa3a726c,
         type: 2}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2069740243}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateSliderValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114133794780272328, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0846e77e2af63994b92a8dc0ecf668fd, type: 2}
   m_IsPrefabAsset: 0
@@ -1503,3 +1586,9 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2037552845}
   m_CullTransparentMesh: 0
+--- !u!114 &2069740243 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114976482532478154, guid: 0846e77e2af63994b92a8dc0ecf668fd,
+    type: 2}
+  m_PrefabInternal: {fileID: 1418793469}
+  m_Script: {fileID: 11500000, guid: 8d08b04b6b6e71d4787f4d8f5410db52, type: 3}
