@@ -4,16 +4,43 @@ using UnityEngine;
 
 public class LiftForceCalculator : MonoBehaviour
 {
+    private const double LocalAcceleration = 9.81;
+    public DoubleVariable AirDensity, AirfoilCoefficient, AttackAngle, Velocity, WingSurface, LiftForceVariable, MassVariable;
+    public GameObject FlyingObject;
 
-    public DoubleVariable AirDensity, AirfoilCoefficient, AttackAngle, Velocity, WingSurface, LiftForceVariable;
-    public double LiftForce = 0;
+    private Rigidbody flyingObjectRb;
+
+    private Quaternion originalRotation;
+    
+    private double liftForce = 0;
+    public double LiftForce
+    {
+        get { return liftForce; }
+        set 
+        { 
+            if(value != liftForce)
+            {   
+                liftForce = value;
+                ApplyForceToObject();
+            }
+        }
+    }
+
+    void Start()
+    {
+        flyingObjectRb = FlyingObject.GetComponent<Rigidbody>();
+        originalRotation = FlyingObject.transform.rotation;
+        FlyingObject.transform.Rotate(new Vector3(0, 0, 1), (float) AttackAngle.Value);
+    }
 
     void Update()
     {
+        flyingObjectRb.mass = (float) MassVariable.Value;
         CalculateLiftForce();
+        Debug.Log("Lift force: " + LiftForce + " Velocity: " + flyingObjectRb.velocity);
     }
 
-    public void CalculateLiftForce()
+    void CalculateLiftForce()
     {
         if (AirDensity && AirfoilCoefficient && AttackAngle && Velocity && WingSurface)
         {
@@ -21,7 +48,16 @@ public class LiftForceCalculator : MonoBehaviour
         }
 		
 		LiftForceVariable.Value = LiftForce;
-		
-        Debug.Log(LiftForce);
+    }
+
+    void ApplyForceToObject()
+    {
+        double resultantForce = LiftForce - (MassVariable.Value * LocalAcceleration);
+     
+        flyingObjectRb.velocity = Vector3.zero;
+        flyingObjectRb.AddForce(new Vector3(0, (float) resultantForce, 0) * 50);
+
+        FlyingObject.transform.localRotation = originalRotation;
+        FlyingObject.transform.Rotate(new Vector3(0, 0, 1), (float) AttackAngle.Value);
     }
 }
