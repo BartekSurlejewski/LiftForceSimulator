@@ -25,7 +25,6 @@ public class RepeatingBackground : MonoBehaviour {
 		
 		if(Math.Abs(transform.position.y - FlyingObject.transform.position.y) > 4000)
 		{
-			Debug.Log("up!");
 			MoveBackgroundUp();
 		}
     }
