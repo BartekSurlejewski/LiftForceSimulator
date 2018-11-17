@@ -23,9 +23,10 @@ public class RepeatingBackground : MonoBehaviour {
             MoveBackgroundRight();
         }
 		
-		if(FlyingObject.transform.position.y > backgroundHeight)
+		if(Math.Abs(transform.position.y - FlyingObject.transform.position.y) > 4000)
 		{
-			// MoveBackgroundUp();
+			Debug.Log("up!");
+			MoveBackgroundUp();
 		}
     }
 
