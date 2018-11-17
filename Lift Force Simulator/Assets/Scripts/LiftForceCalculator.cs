@@ -5,7 +5,7 @@ using UnityEngine;
 public class LiftForceCalculator : MonoBehaviour
 {
     private const double LocalAcceleration = 9.81;
-    public DoubleVariable AirDensity, AirfoilCoefficient, AttackAngle, Velocity, WingSurface, LiftForceVariable, MassVariable;
+    public DoubleVariable AirDensity, AirfoilCoefficient, AttackAngle, Velocity, WingSurface, LiftForceVariable, ResultantForceVariable, MassVariable;
     public GameObject FlyingObject;
 
     public GameObject FlyingObjectWings;
@@ -22,7 +22,7 @@ public class LiftForceCalculator : MonoBehaviour
         get { return liftForce; }
         set 
         { 
-            if(value != liftForce)
+            if(value != liftForce || MassVariable)
             {   
                 liftForce = value;
                 ApplyForceToObject();
@@ -70,6 +70,7 @@ public class LiftForceCalculator : MonoBehaviour
     void ApplyForceToObject()
     {
         double resultantForce = LiftForce - (MassVariable.Value * LocalAcceleration);
+        ResultantForceVariable.Value = resultantForce;
      
         flyingObjectRb.velocity = Vector3.zero;
         flyingObjectRb.AddForce(new Vector3(0, (float) resultantForce, 0) * 50);

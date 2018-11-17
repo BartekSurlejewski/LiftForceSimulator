@@ -11,6 +11,6 @@ public class LiftForceTextController : MonoBehaviour
 	
 	void Update ()
     {
-        LiftForceText.text = "Lift force = " + LiftForce.Value.ToString("0.00") + " N";
+        LiftForceText.text = "Lift force = " + (LiftForce.Value / 1000).ToString("0.00") + " kN";
 	}
 }
